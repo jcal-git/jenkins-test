@@ -14,7 +14,8 @@ spec:
           memory: "1Gi"
           cpu: "500m"
         limits:
-          memory: "1Gi"
+          memory: "2Gi"
+          cpu: "1500m"
   volumes:
     - name: docker
       hostPath:
