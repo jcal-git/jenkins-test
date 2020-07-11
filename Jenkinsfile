@@ -8,11 +8,11 @@ pipeline {
     }
   }
   stages {
-    stage('Build') {
-      steps {  // no container directive is needed as the maven container is the default
-        echo 'test' 
-      }
-    }
+   // stage('Build') {
+   //   steps {  // no container directive is needed as the maven container is the default
+   //     echo 'test' 
+   //   }
+   // }
     stage('Build Docker Image') {
       steps {
         container('docker') {  
