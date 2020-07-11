@@ -12,7 +12,7 @@ pipeline {
     stage('Build Docker Image') {
       steps {
         container('docker') {  
-          echo 'test'
+          docker ps
         }
       }
     }
